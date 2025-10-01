@@ -63,6 +63,11 @@ function Hero({scrollToSection}) {
                     >
                       View My Experience
                     </button>
+                    <a download={true} href="/Mubbashir-resume.pdf"
+                      className="mx-4 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg text-lg font-medium hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300"
+                    >
+                      View My Resume
+                    </a>
                   </div>
                 </div>
               </section>
