@@ -65,7 +65,6 @@ function Skills({scrollToSection}) {
                   { name: 'Express.js', icon: '🚀', color: 'from-gray-600 to-gray-800' },
                   { name: 'Fastify.js', icon: '⚡', color: 'from-blue-600 to-purple-600' },
                   { name: 'RESTful APIs', icon: '🔗', color: 'from-indigo-500 to-blue-600' },
-                  { name: 'GraphQL', icon: '📊', color: 'from-pink-500 to-rose-600' }
                 ].map((skill, index) => (
                   <div 
                     key={skill.name}
