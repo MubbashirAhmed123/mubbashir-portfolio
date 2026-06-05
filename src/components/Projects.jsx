@@ -1,5 +1,17 @@
 import React from 'react';
 
+const githubIcon = (
+  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+  </svg>
+);
+
+const externalLinkIcon = (
+  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+);
+
 const Projects = ({scrollToSection}) => {
   return (
     <section id='projects' className="min-h-screen py-20 relative overflow-hidden">
@@ -26,9 +38,9 @@ const Projects = ({scrollToSection}) => {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           
+          {/* Raseed */}
           <div className="group relative">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-gray-200/50 hover:shadow-2xl transform hover:scale-105 transition-all duration-500">
-              
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
@@ -44,7 +56,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="w-full h-48 bg-gradient-to-br from-green-100 to-emerald-200 rounded-2xl mb-6 flex items-center justify-center group-hover:from-green-200 group-hover:to-emerald-300 transition-all duration-300">
                 <div className="text-center">
                   <div className="text-6xl mb-2">📱</div>
@@ -52,7 +63,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="space-y-4 mb-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">🤖 AI-Powered Receipt Processing</h4>
@@ -70,7 +80,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="mb-6">
                 <h5 className="text-sm font-semibold text-gray-700 mb-3">Technologies Used:</h5>
                 <div className="flex flex-wrap gap-2">
@@ -82,27 +91,87 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="flex flex-wrap gap-4">
                 <button className="flex items-center px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:from-green-600 hover:to-emerald-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  {externalLinkIcon}
                   Live Demo
                 </button>
-                <a href='https://github.com/MubbashirAhmed123/team-raseed-frontend' className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                  </svg>
+                <a href='https://github.com/MubbashirAhmed123/team-raseed-frontend' target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
+                  {githubIcon}
                   GitHub
                 </a>
               </div>
             </div>
           </div>
 
+          {/* BERT Customer Support Intent Classifier */}
           <div className="group relative">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-gray-200/50 hover:shadow-2xl transform hover:scale-105 transition-all duration-500">
-              
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className="w-16 h-16 bg-gradient-to-br from-violet-600 to-purple-700 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    🧠
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Intent Classifier</h3>
+                    <p className="text-sm text-gray-500 font-medium">Customer Support AI · BERT</p>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-r from-violet-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  NLP / AI
+                </div>
+              </div>
+
+              <div className="w-full h-48 bg-gradient-to-br from-violet-100 to-purple-200 rounded-2xl mb-6 flex items-center justify-center group-hover:from-violet-200 group-hover:to-purple-300 transition-all duration-300">
+                <div className="text-center">
+                  <div className="text-6xl mb-2">🤖</div>
+                  <p className="text-gray-600 font-medium">Transformer-Based NLP Engine</p>
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-6">
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">⚡ Transformer-Based Classification</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Fine-tuned BERT (bert-base-uncased) using HuggingFace Transformers and PyTorch to classify customer support requests across multiple intent categories with deep contextual language understanding.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">🎯 AI-Driven Support Automation</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    Engineered an intelligent intent prediction pipeline capable of identifying refund requests, payment issues, complaints, order tracking, and authentication-related queries for chatbot and helpdesk automation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h5 className="text-sm font-semibold text-gray-700 mb-3">Technologies Used:</h5>
+                <div className="flex flex-wrap gap-2">
+                  {[ 'BERT Transformers', 'PyTorch', 'NLP', 'Python', 'Text Classification'].map((tech, idx) => (
+                    <span key={idx} className="px-3 py-1 bg-gradient-to-r from-violet-100 to-purple-100 text-violet-700 rounded-full text-sm border border-violet-200 font-medium">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://github.com/MubbashirAhmed123/Bert_Transformer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
+                >
+                  {githubIcon}
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* IBBank */}
+          <div className="group relative">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-gray-200/50 hover:shadow-2xl transform hover:scale-105 transition-all duration-500">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
@@ -118,7 +187,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-cyan-200 rounded-2xl mb-6 flex items-center justify-center group-hover:from-blue-200 group-hover:to-cyan-300 transition-all duration-300">
                 <div className="text-center">
                   <div className="text-6xl mb-2">💳</div>
@@ -126,7 +194,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="space-y-4 mb-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">💰 Complete Banking Operations</h4>
@@ -144,7 +211,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="mb-6">
                 <h5 className="text-sm font-semibold text-gray-700 mb-3">Technologies Used:</h5>
                 <div className="flex flex-wrap gap-2">
@@ -156,7 +222,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="https://ibbank.vercel.app" 
@@ -164,24 +229,20 @@ const Projects = ({scrollToSection}) => {
                   rel="noopener noreferrer"
                   className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-600 text-white rounded-lg hover:from-blue-600 hover:to-cyan-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  {externalLinkIcon}
                   Live Demo
                 </a>
-                <a href='https://github.com/MubbashirAhmed123/online_banking_system' className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                  </svg>
+                <a href='https://github.com/MubbashirAhmed123/online_banking_system' target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
+                  {githubIcon}
                   GitHub
                 </a>
               </div>
             </div>
           </div>
 
+          {/* WareHouse Pro */}
           <div className="group relative">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-gray-200/50 hover:shadow-2xl transform hover:scale-105 transition-all duration-500">
-              
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
@@ -193,11 +254,10 @@ const Projects = ({scrollToSection}) => {
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                 Full Stack | IoT Integration
+                  Full Stack | IoT Integration
                 </div>
               </div>
 
-              
               <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-pink-200 rounded-2xl mb-6 flex items-center justify-center group-hover:from-purple-200 group-hover:to-pink-300 transition-all duration-300">
                 <div className="text-center">
                   <div className="text-6xl mb-2">📱</div>
@@ -205,7 +265,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="space-y-4 mb-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">📋 QR Code-Based Storage System</h4>
@@ -223,7 +282,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="mb-6">
                 <h5 className="text-sm font-semibold text-gray-700 mb-3">Technologies Used:</h5>
                 <div className="flex flex-wrap gap-2">
@@ -235,34 +293,27 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="flex flex-wrap gap-4">
-                
                 <a 
                   href="#" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg hover:from-purple-600 hover:to-pink-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  {externalLinkIcon}
                   Live Demo
                 </a>
                 <button className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                  </svg>
+                  {githubIcon}
                   GitHub
                 </button>
               </div>
             </div>
           </div>
 
-          
-          <div className="group relative">
+          {/* Turf Booking */}
+          <div className="group relative lg:col-span-2 lg:max-w-2xl lg:mx-auto w-full">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-gray-200/50 hover:shadow-2xl transform hover:scale-105 transition-all duration-500">
-              
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
@@ -278,7 +329,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="w-full h-48 bg-gradient-to-br from-orange-100 to-red-200 rounded-2xl mb-6 flex items-center justify-center group-hover:from-orange-200 group-hover:to-red-300 transition-all duration-300">
                 <div className="text-center">
                   <div className="text-6xl mb-2">🏟️</div>
@@ -286,7 +336,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="space-y-4 mb-6">
                 <div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">🎯 Dynamic Turf Booking System</h4>
@@ -304,7 +353,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="mb-6">
                 <h5 className="text-sm font-semibold text-gray-700 mb-3">Technologies Used:</h5>
                 <div className="flex flex-wrap gap-2">
@@ -316,7 +364,6 @@ const Projects = ({scrollToSection}) => {
                 </div>
               </div>
 
-              
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="https://turf-booking-app.vercel.app" 
@@ -324,30 +371,17 @@ const Projects = ({scrollToSection}) => {
                   rel="noopener noreferrer"
                   className="flex items-center px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg hover:from-orange-600 hover:to-red-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
                 >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  {externalLinkIcon}
                   Live Demo
                 </a>
-               
-                <a href='https://github.com/MubbashirAhmed123/turf-booking' className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-                  </svg>
+                <a href='https://github.com/MubbashirAhmed123/turf-booking' target="_blank" rel="noopener noreferrer" className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-all duration-300 font-semibold shadow-md hover:shadow-lg">
+                  {githubIcon}
                   GitHub
                 </a>
               </div>
             </div>
           </div>
 
-        </div>
-
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">More Projects Coming Soon</h3>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            I'm constantly working on new and exciting projects. Stay tuned for more innovative solutions 
-            that push the boundaries of web development and AI integration.
-          </p>
         </div>
 
         <div className="text-center">
@@ -364,7 +398,7 @@ const Projects = ({scrollToSection}) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
-              <a href='https://github.com/MubbashirAhmed123' className="inline-flex items-center px-8 py-4 bg-white text-gray-800 font-bold rounded-full hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-200">
+              <a href='https://github.com/MubbashirAhmed123' target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-white text-gray-800 font-bold rounded-full hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-gray-200">
                 <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
                 </svg>

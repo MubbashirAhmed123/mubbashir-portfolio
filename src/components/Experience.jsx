@@ -30,7 +30,71 @@ function Experience({scrollToSection}) {
             <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 hidden lg:block"></div>
 
             <div className="space-y-12">
-              
+
+              {/* HWL - Current Role */}
+              <div className="relative">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                  <div className="lg:text-right mb-8 lg:mb-0">
+                    <div className="inline-block lg:block">
+                      <div className="bg-gradient-to-br from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold mb-4 inline-block">
+                        Nov 2025 – Present
+                      </div>
+                      <div className="inline-flex items-center gap-2 bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-xs font-semibold mb-3 border border-cyan-400/30 lg:mr-5">
+                        🟢 Current Role
+                      </div>
+                      <h3 className="text-3xl font-bold text-white mb-2 mr-5">Software Engineer</h3>
+                      <h4 className="text-xl text-cyan-300 font-semibold mb-4">HWL · Healthcare Workforce Logistics</h4>
+                    </div>
+                  </div>
+
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg lg:flex">
+                    🏥
+                  </div>
+
+                  <div className="lg:pl-8">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-cyan-400/30 shadow-xl">
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-300 leading-relaxed">
+                            Contributed to <span className="text-cyan-300 font-semibold">AI-driven predictive analytics systems</span> leveraging workforce and healthcare operational datasets to forecast staffing demand, utilization trends, and resource allocation patterns for intelligent decision-support.
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-300 leading-relaxed">
+                            Architected scalable <span className="text-blue-300 font-semibold">Tableau data integration pipelines</span> and distributed analytical workflows, enabling low-latency visualization and high-throughput processing of enterprise-scale datasets.
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-300 leading-relaxed">
+                            Contributed to <span className="text-purple-300 font-semibold">intelligent data orchestration</span> and real-time processing workflows integrating AI inference systems with enterprise reporting platforms, ensuring high data integrity and consistency.
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-gray-300 leading-relaxed">
+                            Engineered advanced <span className="text-pink-300 font-semibold">frontend and backend performance optimizations</span> including lazy loading, caching, concurrency control, and async processing — significantly improving dashboard responsiveness under heavy workloads.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 pt-4 border-t border-white/20">
+                        <div className="flex flex-wrap gap-2">
+                          {['Predictive Analytics', 'Open AI', 'Tableau', 'Real-time Processing', 'AI Report Generation', 'Performance Optimization'].map((tech, idx) => (
+                            <span key={idx} className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-200 rounded-full text-sm border border-cyan-400/30">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Neokred Technologies */}
               <div className="relative">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
                   <div className="lg:text-right mb-8 lg:mb-0">
@@ -43,7 +107,7 @@ function Experience({scrollToSection}) {
                     </div>
                   </div>
 
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg  lg:flex">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg lg:flex">
                     🚀
                   </div>
 
@@ -53,43 +117,26 @@ function Experience({scrollToSection}) {
                         <div className="flex items-start space-x-3">
                           <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-gray-300 leading-relaxed">
-                            Developed and maintained <span className="text-blue-300 font-semibold">ProfileX</span> for KYC, 
-                            fraud reduction, and digital onboarding, serving major fintech and banking clients
+                            Architected and optimized <span className="text-blue-300 font-semibold">enterprise-grade KYC, fraud prevention, and digital onboarding</span> platforms supporting secure identity verification workflows for fintech and banking applications with high-volume user onboarding.
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-gray-300 leading-relaxed">
-                            Built and optimized <span className="text-purple-300 font-semibold">real-time bundle APIs</span> for 
-                            seamless data processing and response delivery
+                            Engineered <span className="text-purple-300 font-semibold">high-throughput real-time API orchestration</span> systems and no-code bundle automation capabilities, reducing manual operational efforts by <span className="text-white font-bold">70%</span> and improving distributed data processing efficiency.
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-gray-300 leading-relaxed">
-                            Implemented <span className="text-pink-300 font-semibold">drag-and-drop bundle automation</span> functionality 
-                            allowing users to visually combine multiple APIs without coding
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-gray-300 leading-relaxed">
-                            Developed <span className="text-green-300 font-semibold">advanced device fingerprinting SDK</span> for 
-                            fraud detection across web, Android, and iOS platforms
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-gray-300 leading-relaxed">
-                            Created responsive UI components using <span className="text-yellow-300 font-semibold">Next.js and TypeScript</span> while 
-                            working in cross-functional agile teams
+                            Developed advanced <span className="text-pink-300 font-semibold">device intelligence and behavioral analytics</span> solutions including real-time fingerprinting, suspicious activity detection, and cross-platform tracking mechanisms, strengthening fraud detection accuracy.
                           </p>
                         </div>
                       </div>
 
                       <div className="mt-6 pt-4 border-t border-white/20">
                         <div className="flex flex-wrap gap-2">
-                          {['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'AWS', 'Real-time APIs'].map((tech, idx) => (
+                          {['Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'AWS', 'Real-time APIs', 'Device Intelligence'].map((tech, idx) => (
                             <span key={idx} className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-200 rounded-full text-sm border border-blue-400/30">
                               {tech}
                             </span>
@@ -101,6 +148,7 @@ function Experience({scrollToSection}) {
                 </div>
               </div>
 
+              {/* Pentagon Space Training */}
               <div className="relative">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
                   <div className="lg:text-right lg:order-2 mb-8 lg:mb-0">
@@ -113,7 +161,7 @@ function Experience({scrollToSection}) {
                     </div>
                   </div>
 
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg  lg:flex">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg lg:flex">
                     📚
                   </div>
 
@@ -164,6 +212,7 @@ function Experience({scrollToSection}) {
                 </div>
               </div>
 
+              {/* AWS Intern */}
               <div className="relative">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
                   <div className="lg:text-right mb-8 lg:mb-0">
@@ -176,7 +225,7 @@ function Experience({scrollToSection}) {
                     </div>
                   </div>
 
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg  lg:flex">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg lg:flex">
                     ☁️
                   </div>
 
@@ -242,7 +291,8 @@ function Experience({scrollToSection}) {
             </button>
           </div>
         </div>
-      </section>  )
+      </section>
+  )
 }
 
 export default Experience

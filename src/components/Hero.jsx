@@ -5,13 +5,13 @@ function Hero({ scrollToSection }) {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 bg-white"
+      className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 bg-white mb-2"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Profile Avatar */}
         <div className="mb-8">
-          <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-6 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold">
-            MMA
+          <div className="w-32 h-32 sm:w-28 sm:h-28 md:w-64 md:h-64  mx-auto mb-6 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl sm:text-4xl font-bold">
+            <img src="/public/image.png" alt="" className="rounded-full" />
           </div>
         </div>
 
@@ -78,7 +78,7 @@ function Hero({ scrollToSection }) {
 
           <a
             download
-            href="/Mubbashir-resume.pdf"
+            href="/1.Mubbashir_ahmed_resume.pdf"
             className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg text-base sm:text-lg font-medium hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300"
           >
             View My Resume
